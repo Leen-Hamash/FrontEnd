@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe 1</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+
+    <main class="container my-4 py-0">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb bg-white px-0">
+                <li class="breadcrumb-item"><a href="#">Electronics</a></li>
+                <li class="breadcrumb-item"><a href="#">Apple</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Apple iPhone 12</li>
+            </ol>
+        </nav>
+        <div class="row">
+            <aside class="col-lg-6 bg-light">
+                <div class="border-none rounded mb-3 d-flex justify-content-center">
+                    <a data-fslightbox="mygalley" class="rounded-4" target="_blank" data-type="image" href="#">
+                        <div class="row">
+                            <div class="col-md-2 mt-3 mx-3 justify-content-center">
+                                <a data-fslightbox="mygalley" target="_blank" data-type="image" href="#"
+                                    class="item-thumb mx-3">
+                                    <img width="60" height="60" class="rounded my-2" src="assets/images/default.png" />
+                                </a>
+                                <a data-fslightbox="mygalley" target="_blank" data-type="image" href="#"
+                                    class="item-thumb mx-3">
+                                    <img width="60" height="60" class="rounded my-2" src="assets/images/default.png" />
+                                </a>
+                                <a data-fslightbox="mygalley" target="_blank" data-type="image" href="#"
+                                    class="item-thumb mx-3">
+                                    <img width="60" height="60" class="rounded my-2" src="assets/images/default.png" />
+                                </a>
+                            </div>
+                            <div class="col-md-8 d-flex justify-content-center my-5">
+                                <img class="rounded-4" src="assets/images/productImg.png" />
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </aside>
+            <div class="col-lg-6 px-4">
+                <h2 class="font-weight-bold">Apple iPhone 12</h2>
+                <div class="d-flex flex-row my-0">
+                    <div class="rating">
+                        <input type="radio" id="star5" name="rating" value="5">
+                        <label for="star5" title="Great"></label>
+                        <input type="radio" id="star4" name="rating" value="4" checked> <!-- Set default to 4 stars -->
+                        <label for="star4" title="Good"></label>
+                        <input type="radio" id="star3" name="rating" value="3">
+                        <label for="star3" title="Okay"></label>
+                        <input type="radio" id="star2" name="rating" value="2">
+                        <label for="star2" title="Bad"></label>
+                        <input type="radio" id="star1" name="rating" value="1">
+                        <label for="star1" title="Very Bad"></label>
+                    </div>
+                    <span class="ms-1 text-muted mx-2">
+                        15
+                    </span>
+                </div>
+                <p class="text-muted">Description of the product goes here. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit.</p>
+
+                <div class="row mb-1">
+                    <div class="col-md-3">
+                        <div><strong>Memory</strong></div>
+                        <div class="text-muted">In Stock</div>
+                    </div>
+                    <div class="col-md-9">
+                        <span class="border rounded-10 size mx-1 p-0">24</span>
+                        <span class="border rounded-10 size mx-1 p-0 active">32</span>
+                        <span class="border rounded-10 size mx-1 p-0">64</span>
+                        <span class="border rounded-10 size mx-1 p-0">128</span>
+                        <span class="border rounded-10 size mx-1 p-0">256</span>
+                    </div>
+                </div>
+                <p class="text-muted mb-1">$1150.00</p>
+                <h2><strong>$990.00</strong></h2>
+                <div class="row d-flex align-items-center my-1">
+
+                    <div class="input-group col-md-3 col-sm-6 my-2">
+                        <input type="number" class="form-control text-center" id="quantity" value="1" min="1">
+                    </div>
+                    <div class="col-md-4 col-sm-6 my-2">
+                        <button class="btn btn-primary btn-block" id="add-to-cart-btn"><i
+                                class="fa fa-shopping-basket mx-2"></i>Add to Cart</button>
+                    </div>
+                    <div class="col-md-4 col-sm-6 my-2">
+                        <button class="btn border btn-block text-dark font-weight-bold" id="buy-now-btn">Buy
+                            Now</button>
+                    </div>
+                </div>
+
+                <div class="d-flex">
+                    <button class="btn text-muted px-0">
+                        <i class="fa fa-heart"></i> Wishlist</button>
+                    <button class="btn text-muted px-0 mx-2">
+                        <i class="fa fa-plus-circle mx-1"></i>Compare</button>
+                    <button class="btn text-muted px-0 mx-2">
+                        <i class="fa fa-share-alt"></i> Share</button>
+                </div>
+                <div id="product-details" class="mt-1">
+                    <div id="accordion">
+                        <div class="card border-0">
+                            <div class="card-header border-0 bg-white border-top p-0 d-flex justify-content-between align-items-center accordion-header"
+                                id="headingOne">
+                                <h5 class="mb-0">
+                                    <span class="btn text-dark font-weight-bold py-3 px-0">
+                                        Description
+                                    </span>
+                                </h5>
+                                <i class="fa fa-chevron-right" aria-expanded="true"></i>
+                            </div>
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne">
+                                <div class="card-body text-muted px-0 pb-3 pt-0">
+                                    Detailed description of the product.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card border-0">
+                            <div class="card-header border-0 bg-white border-top p-0 d-flex justify-content-between align-items-center accordion-header collapsed"
+                                id="headingTwo">
+                                <h5 class="mb-0">
+                                    <span class="btn text-dark font-weight-bold py-3 px-0">
+                                        Reviews
+                                    </span>
+                                </h5>
+                                <i class="fa fa-chevron-right" aria-expanded="false"></i>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo">
+                                <div class="card-body text-muted px-0 pb-3 pt-0">
+                                    Customer reviews.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card border-0">
+                            <div class="card-header border-0 bg-white border-top p-0 d-flex justify-content-between align-items-center accordion-header collapsed"
+                                id="headingThree">
+                                <h5 class="mb-0">
+                                    <span class="btn text-dark font-weight-bold py-3 px-0">
+                                        Characteristics
+                                    </span>
+                                </h5>
+                                <i class="fa fa-chevron-right" aria-expanded="false"></i>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree">
+                                <div class="card-body text-muted px-0 pb-3 pt-0">
+                                    Product characteristics.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js" defer></script>
+
+
+</body>
+
+</html>

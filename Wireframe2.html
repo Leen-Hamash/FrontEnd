@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe 2</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+
+    <main class="container my-4 py-0">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb bg-white px-0">
+                <li class="breadcrumb-item"><a href="#">Electronics</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Nike AirMax</li>
+            </ol>
+        </nav>
+        <div class="row">
+            <aside class="col-lg-6 bg-light">
+                <div class="border-none rounded mb-3 d-flex justify-content-center">
+                    <a data-fslightbox="mygalley" class="rounded-4" target="_blank" data-type="image" href="#">
+                        <div>
+                            <div class="row d-flex justify-content-center my-5">
+                                <img class="col-md-12 rounded-4 fit" src="assets/images/productImg2.png" />
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </aside>
+            <div class="col-lg-6 px-4">
+                <h2 class="font-weight-bold">Nike Air Max 90</h2>
+                <div class="d-flex flex-row my-0">
+                    <div class="rating">
+                        <input type="radio" id="stars5" name="rating" value="5">
+                        <label for="star5" title="Great"></label>
+                        <input type="radio" id="stars4" name="rating" value="4">
+                        <label for="star4" title="Good"></label>
+                        <input type="radio" id="stars3" name="rating" value="3">
+                        <label for="star3" title="Okay"></label>
+                        <input type="radio" id="stars2" name="rating" value="2">
+                        <label for="star2" title="Bad"></label>
+                        <input type="radio" id="stars1" name="rating" value="1">
+                        <label for="star1" title="Very Bad"></label>
+                    </div>
+                    <span class="ms-1 text-muted mx-2">
+                        No reviews
+                    </span>
+                </div>
+                <h2 class="my-3"><strong>$990.00</strong></h2>
+                <p class="text-muted mb-1">Availability: <strong class="text-dark">In Stock</strong> </p>
+                <p class="text-muted mb-1">SKU: <strong class="text-dark">N/A</strong> </p>
+                <p class="text-muted mt-3">Description of the product goes here. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit.</p>
+                <h6 class="border-top pt-2"><strong>Select Size</strong></h6>
+                <div class="row">
+                    <div class="col-md-12">
+                        <span class="border rounded-10 size mx-1 p-0">7</span>
+                        <span class="border rounded-10 size mx-1 p-0 active">7.5</span>
+                        <span class="border rounded-10 size mx-1 p-0">8</span>
+                        <span class="border rounded-10 size mx-1 p-0">8.5</span>
+                        <span class="border rounded-10 size mx-1 p-0">9</span>
+                    </div>
+                </div>
+                <p class="text-muted my-2"><i class='fa fa-ruler-horizontal mx-2'></i> Size Charts</p>
+                <div class="row d-flex align-items-center my-1">
+
+                    <div class="col-md-12 my-2">
+                        <button class="btn py-2 border btn-block text-dark font-weight-bold" data-toggle="modal"
+                        data-target="#addToCartModal" id="add-to-cart">Add to
+                            Cart</button>
+                    </div>
+                    <div class="col-md-12 my-2">
+                        <button class="btn py-2 btn-primary btn-block" id="buy-now" data-toggle="modal"
+                            data-target="#products">Buy Now</button>
+                    </div>
+                </div>
+                <div class="my-2">
+                    <p class="text-muted mb-1">Proudect type: <strong class="text-dark">Sneakers</strong> </p>
+                    <p class="text-muted mb-1">Modal: <strong class="text-dark">DC9388-003</strong> </p>
+                </div>
+                <div class="d-flex mt-4 px-0 border-top">
+                    <button class="btn text-muted px-0">
+                        <i class="fa fa-heart"></i> Add To favorites </button>
+                    <div class="wrapper">
+                        <div class="icon share text-muted">
+                            <div class="tooltip">
+                                <div class="font-weight-bold text-center text-dark my-2"> Share Link</div>
+                                <span>
+                                    <i class=" text-muted border p-2 mx-2 text-dark fa-brands fa-facebook"></i>
+                                </span>
+                                <span>
+                                    <i class=" text-muted border p-2 mx-2 text-dark fa-brands fa-x-twitter"></i>
+                                </span>
+
+                                <span>
+                                    <i class=" text-muted border p-2 mx-2 text-dark fa-brands fa-pinterest"></i>
+                                </span>
+                            </div>
+                            <span>
+                                <i class="fa fa-share-alt"></i> Share
+                            </span>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <div class="modal fade" id="addToCartModal" tabindex="-1" role="dialog" aria-labelledby="addToCartModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content rounded-10">
+                <div class="modal-header ">
+                    <h5 class="modal-title font-weight-bold" id="addToCartModalLabel">Added your to Cart</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="text-muted">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body border-0">
+                    <div class="row">
+                        <img class="col-md-3 col-sm-12 rounded-4 fit" src="assets/images/productImg3.png" />
+                        <div class="col-md-9 col-sm-12">
+                            <span class="font-weight-bold">Apple Airpods</span>
+                            <p class="text-muted mb-1">Quantity: <strong class="text-dark">1</strong> </p>
+                            <p class="text-muted mb-1">Cart Subtotal: <strong class="text-dark">$120.00</strong> </p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer  border-0 row mx-1">
+                    <button type="button" class="btn border text-dark col-md-5 col-sm-12" data-dismiss="modal">continue
+                        Shopping</button>
+                    <button type="button" data-dismiss="modal"
+                        class="btn py-2 btn-primary btn-block col-md-5 col-sm-12">Proceed to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="products" tabindex="-1" role="dialog" aria-labelledby="products" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content rounded-10">
+
+                <div class="modal-body border-0 pb-0">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="text-muted">&times;</span>
+                    </button>
+                    <div class="row">
+                        <img class="col-md-12 col-sm-12 rounded-4" src="assets/images/productImg2.png" />
+                        <div class="col-md-9 col-sm-12">
+
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row my-3">
+                        <div class="text-warning mb-1 me-2">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fas fa-star"></i>
+
+                        </div>
+                        <span class="mx-1 text-muted">
+                            23 reviews
+                        </span>
+                    </div>
+                    <h5 class="my-0"><strong>Nike Air</strong></h5>
+                    <p class="text-muted mb-1">Sneakers</p>
+                    <h2 class="my-3"><strong>$140.00</strong></h2>
+                </div>
+                <div class="modal-footer  border-0 row mx-1">
+                    <button type="button" class="btn border text-dark col-md-12 col-sm-12" data-dismiss="modal"><i
+                            class="fa fa-shopping-basket mx-2"></i> Add To Cart</button>
+                    <p class="text-muted mb-1 col-md-12"><i class="fa-regular fa-circle-question"></i> inform about
+                        admission</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js" defer></script>
+
+</body>
+
+</html>
